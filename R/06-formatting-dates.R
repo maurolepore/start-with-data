@@ -9,27 +9,22 @@ surveys <- read.csv("data/portal_data_joined.csv")
 date_chr <- "2015-01-01"
 # Same
 date_chr <- paste("2015", "1", "1", sep = "-")
-# So 
-years <- c(2015:2018)
-months <- rep(1, 4)
-days <- c(1:4)
-date_chr <- paste(years, months, days, sep = "-")
 
-# Compare
+# They look similar but behave differently. Compare:
 str(date_chr)
 str(ymd(date_chr))
+
 # Fails
 date_chr + 1
+
 # Works
 ymd(date_chr) + 1
 
 my_date <- ymd(date_chr) 
 str(my_date)
 
-# Now using surveys
+# Create a `date` variable in `surveys` from its vars `year`, `month` and `day`
 surveys$date <- ymd(paste(surveys$year, surveys$month, surveys$day, sep = "-"))
-# Same
-surveys <- transform(surveys, date2 = ymd(paste(year, month, day, sep = "-")))
 head(surveys)
 
 # Explore parsing errors due to missing values
