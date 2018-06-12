@@ -1,9 +1,10 @@
-# What are dataframes? ----------------------------------------------------
+# What are dataframes?
 
+# TODO: Discuss the example and fill the dots 
 # Data with the following structure:
-# * Table (2d).
-# * Columns are vectors of equal length.
-# * Columns are vectors of equal type (e.g., characters, integers, factors).
+# * 
+# * 
+# * 
 
 # Example
 # 
