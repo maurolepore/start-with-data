@@ -2,9 +2,9 @@
 surveys <- read.csv("stuff/portal_data_joined.csv")
 
 # ?str(): Compactly Display the Structure of an Arbitrary R Object
-str(surveys)
+# TODO: Inspect the structure of `surveys`
 
-# More:
+# TODO: Inspect `surveys` with these functions:
 # * dim(), nrow(), ncol()
 # * head(), tail()
 # * names(), rownames()

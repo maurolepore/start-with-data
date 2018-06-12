@@ -9,6 +9,7 @@ surveys <- read.csv("stuff/portal_data_joined.csv")
 old <- options(max.print = 3)  # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # Position indices as coordinates of a dataframe (2d): df[rows, columns]
+# TODO: Subset `surveys` in these ways:
 # dfm[ONE-ROW, ONE-COL]
 # dfm[ALL-ROWS, ONE-COL]
 # dfm[ONE-COL]

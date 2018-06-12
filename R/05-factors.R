@@ -1,30 +1,19 @@
 # Factors: Labelled **integers** (ordered or unordered) representing categories.
 
-# Build a factor of length 4 with two levels representing sex categories.
-sex <- factor(c("male", "female", "female", "male"))
+# TODO: Build a factor of length 4 with two levels representing sex categories.
 
-# Try levels(), nlevels()
-levels(sex)
-nlevels(sex)
+# TODO: Try levels(), nlevels()
 
-# Reorder levels
-sex
-sex <- factor(sex, levels = c("male", "female"))
-sex
+# TODO: Reorder levels
 
 # Converting factors ------------------------------------------------------
 
-
 # Convert factor with character-labels to character: 
-# * Coerce factor to character. E.g. `sex`
-as.character(sex)
+# TODO: Coerce factor to character. E.g. `sex`
 
 # Convert factor with numeric-labels: 
-# * Coerce factor to character; then character to numeric.
+# TODO: Coerce factor to character; then character to numeric.
 # * E.g. `year_fct` from c(1990, 1983, 1977, 1998, 1990)
-year_fct <- factor(c(1990, 1983, 1977, 1998, 1990))
-as.numeric(year_fct)
-as.numeric(as.character(year_fct))
 
 # Hint: Always coerce factors to character first. Why?
 
@@ -34,21 +23,16 @@ as.numeric(as.character(year_fct))
 surveys <- read.csv("stuff/portal_data_joined.csv")
 
 
-# Plot number of females and males
-plot(surveys$sex)
+# TODO: plot() theh count of sex categories
 
 # Rename missing values
-# Create a working copy of surveys$sex named `sex`
-sex <- surveys$sex
+# TODO: Create a working copy of surveys$sex named `sex`
 
-# Show that level 1 is missing
-sex[1:20]
-levels(sex)
+# TODO: See that level 1 is missing
 
-# Rename level 1 as "undetermined"
-levels(sex)[1] <- "undetermined"
-# Plot again
-plot(sex)
+# TODO: Rename level 1 as "undetermined"
+
+# TODO: Plot again to confirm missing values are now labelled
 
 # Challenge ---------------------------------------------------------------
 
@@ -56,14 +40,10 @@ plot(sex)
 
 # Using stringsAsFactors = FALSE ------------------------------------------
 
-# Show `str()` of data read with `stringsAsFactors = T` then `F`.
-surveys <- read.csv("data/portal_data_joined.csv", stringsAsFactors = TRUE)
-str(surveys)
-surveys <- read.csv("data/portal_data_joined.csv", stringsAsFactors = FALSE)
-str(surveys)
+# TODO: Read with `stringsAsFactors = TRUE` then `FALSE`.
+# TODO: Show structure of each alternative.
 
-# Convert the column "plot_type" into a factor in place using `$`
-surveys$plot_type <- factor(surveys$plot_type)
+# TODO: Convert the column "plot_type" into a factor using `$`
 
 # Challenge ---------------------------------------------------------------
 
