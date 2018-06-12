@@ -8,37 +8,31 @@
 
 # Download data -----------------------------------------------------------
 
+
 # ?download.file(): Download File from the Internet.
+# TODO: download file
 # * From: https://ndownloader.figshare.com/files/2292169
 # * To: data/portal_data_joined.csv
 # FIXME: Hint: What's the output of dir.exists("data")?
-dir.create("data")
-download.file(
-  url = "https://ndownloader.figshare.com/files/2292169", 
-  destfile = "data/portal_data_joined.csv"
-)
 
 # Read data ---------------------------------------------------------------
 
 # ?read.csv(): Data Input.
-# * From: data/portal_data_joined.csv
-# * To: surveys
-surveys <- read.csv("data/portal_data_joined.csv")
-head(surveys)
+# TODO: Read data from data/portal_data_joined.csv into surveys
+# TODO: View first few lines
 
-# Bonus: Read and view more elegantly -------------------------------------
+# Note --------------------------------------------------------------------
 
-# ?read.csv()
-# > file can also be a complete URL.
-url <- "https://ndownloader.figshare.com/files/2292169"
-surveys <- read.csv(url)
-# ?View(): Invoke a Data Viewer
-View(surveys)
-
-# Learn more --------------------------------------------------------------
-
-# ?read.csv():
+# TODO: Discuss rhese arguments of read.csv()
 # * sep (e.g. "\t")
 # * na.strings
 # * colClasses
 # * stringsAsFactors
+
+# Bonus: Read and view more elegantly -------------------------------------
+
+# ?read.csv(): `file` can also be a complete URL.
+# TODO: Download and read in one step.
+# TODO: Discuss problems of this approach.
+# ?View(): Invoke a Data Viewer
+# TODO: View and filter data.
