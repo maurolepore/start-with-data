@@ -31,7 +31,7 @@ as.numeric(as.character(year_fct))
 # Renaming factors --------------------------------------------------------
 
 # Allow Restarting R session (shift + ctrl/cmd + F10)
-surveys <- read.csv("data/portal_data_joined.csv")
+surveys <- read.csv("stuff/portal_data_joined.csv")
 
 
 # Plot number of females and males

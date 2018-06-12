@@ -2,7 +2,7 @@
 library("lubridate")
 
 # Allow Restarting R session (shift + ctrl/cmd + F10)
-surveys <- read.csv("data/portal_data_joined.csv")
+surveys <- read.csv("stuff/portal_data_joined.csv")
 
 # Create a date object with `ymd()` and inspect the structure
 

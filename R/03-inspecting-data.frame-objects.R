@@ -1,5 +1,5 @@
 # Allow Restarting R session (shift + ctrl/cmd + F10)
-surveys <- read.csv("data/portal_data_joined.csv")
+surveys <- read.csv("stuff/portal_data_joined.csv")
 
 # ?str(): Compactly Display the Structure of an Arbitrary R Object
 str(surveys)
